@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Thomas - Quality World with Thomas</title>
+    <link rel="stylesheet" href="../css/styles.css?v=2">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Force contact header to show */
+        .contact-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+            color: white !important;
+            padding: 2rem !important;
+            margin-bottom: 3rem !important;
+            border-radius: 15px !important;
+            text-align: center !important;
+            display: block !important;
+            width: 100% !important;
+        }
+        .contact-container {
+            max-width: 1200px !important;
+            margin: 0 auto !important;
+            padding: 2rem !important;
+        }
+        .contact-grid {
+            display: grid !important;
+            grid-template-columns: 1fr 2fr !important;
+            gap: 2rem !important;
+            margin-bottom: 3rem !important;
+        }
+        @media (max-width: 1024px) {
+            .contact-grid {
+                grid-template-columns: 1fr !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1><a href="../index.html" style="color: white; text-decoration: none;">Quality World with Thomas</a></h1>
+            </div>
+            <div class="nav-links">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content" id="main-content">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h1>Get in Touch with Thomas</h1>
+                <p>Have questions about quality systems? Need consultation or advice? I'd love to hear from you!</p>
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a> > <span>Contact</span>
+                </div>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-grid">
+                    <!-- Contact Information -->
+                    <div class="contact-info">
+                        <h2>Contact Information</h2>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>thomas@qualityworld.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">💼</div>
+                            <div class="contact-details">
+                                <h3>LinkedIn</h3>
+                                <p>Connect with me professionally</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">🌍</div>
+                            <div class="contact-details">
+                                <h3>Location</h3>
+                                <p>Available for remote consultations worldwide</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">⏰</div>
+                            <div class="contact-details">
+                                <h3>Response Time</h3>
+                                <p>Typically within 24-48 hours</p>
+                            </div>
+                        </div>
+
+                        <div class="expertise-areas">
+                            <h3>Areas of Expertise</h3>
+                            <ul>
+                                <li>Food Safety & Quality Management</li>
+                                <li>Pharmaceutical GMP & Regulatory Compliance</li>
+                                <li>Cosmetic Quality Systems</li>
+                                <li>Quality Auditing & Training</li>
+                                <li>Process Improvement & Optimization</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-section">
+                        <h2>Send a Message</h2>
+                        <form id="contactForm" class="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                                <span class="error-message" id="nameError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="company">Company/Organization</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a topic...</option>
+                                    <option value="consultation">Quality Consultation</option>
+                                    <option value="training">Training & Education</option>
+                                    <option value="auditing">Quality Auditing</option>
+                                    <option value="food-safety">Food Safety Questions</option>
+                                    <option value="pharmaceutical">Pharmaceutical GMP</option>
+                                    <option value="cosmetic">Cosmetic Quality</option>
+                                    <option value="certification">Certification Guidance</option>
+                                    <option value="speaking">Speaking Engagements</option>
+                                    <option value="collaboration">Collaboration Opportunities</option>
+                                    <option value="general">General Inquiry</option>
+                                </select>
+                                <span class="error-message" id="subjectError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="urgency">Priority Level</label>
+                                <select id="urgency" name="urgency">
+                                    <option value="normal">Normal</option>
+                                    <option value="high">High Priority</option>
+                                    <option value="urgent">Urgent</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="6" required placeholder="Please provide details about your inquiry, including any specific quality systems you're interested in or challenges you're facing..."></textarea>
+                                <span class="error-message" id="messageError"></span>
+                                <div class="character-count">
+                                    <span id="charCount">0</span>/1000 characters
+                                </div>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <span class="checkmark"></span>
+                                    Subscribe to quality management insights and updates
+                                </label>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="consent" name="consent" required>
+                                    <span class="checkmark"></span>
+                                    I consent to being contacted about my inquiry *
+                                </label>
+                                <span class="error-message" id="consentError"></span>
+                            </div>
+
+                            <!-- Simple Honeypot for Spam Protection -->
+                            <div class="honeypot">
+                                <input type="text" name="website" tabindex="-1" autocomplete="off">
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="button" class="btn-secondary" onclick="resetForm()">Clear Form</button>
+                                <button type="submit" class="btn-primary" id="submitBtn">
+                                    <span class="btn-text">Send Message</span>
+                                    <span class="btn-loading" style="display: none;">Sending...</span>
+                                </button>
+                            </div>
+                        </form>
+
+                        <!-- Success/Error Messages -->
+                        <div id="formMessages" class="form-messages" style="display: none;">
+                            <div id="successMessage" class="success-message" style="display: none;">
+                                <div class="message-icon">✅</div>
+                                <div class="message-content">
+                                    <h3>Message Sent Successfully!</h3>
+                                    <p>Thank you for reaching out. I'll review your message and respond within 24-48 hours.</p>
+                                </div>
+                            </div>
+                            
+                            <div id="errorMessage" class="error-message-box" style="display: none;">
+                                <div class="message-icon">❌</div>
+                                <div class="message-content">
+                                    <h3>Message Failed to Send</h3>
+                                    <p id="errorDetails">There was an error sending your message. Please try again or contact me directly at thomas@qualityworld.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Section -->
+                <div class="faq-section">
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="faq-grid">
+                        <div class="faq-item">
+                            <h3>What type of consultation do you provide?</h3>
+                            <p>I offer comprehensive quality management consulting across food safety, pharmaceutical, and cosmetic industries, including system implementation, auditing, training, and regulatory compliance guidance.</p>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h3>Do you provide training services?</h3>
+                            <p>Yes! I conduct training sessions on various quality systems including HACCP, GMP, ISO standards, and industry-specific regulations. Training can be delivered remotely or on-site.</p>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h3>How quickly can you respond to urgent matters?</h3>
+                            <p>For urgent quality issues or compliance deadlines, I prioritize responses within 24 hours. Please mark your inquiry as "Urgent" in the priority field.</p>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h3>Do you work with international clients?</h3>
+                            <p>Absolutely! I work with clients worldwide and am familiar with international quality standards and regulatory requirements across different regions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Quality World with Thomas. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/contact.js"></script>
+</body>
+</html>

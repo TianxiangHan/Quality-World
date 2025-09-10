@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Safety and Quality Systems - Quality World with Thomas</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1><a href="../index.html" style="color: white; text-decoration: none;">Quality World with Thomas</a></h1>
+            </div>
+            <div class="nav-links">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content" id="main-content">
+        <div class="roadmap-container">
+            <div class="roadmap-header">
+                <h1>Food Safety and Quality Systems</h1>
+                <p>Explore the essential quality systems that ensure food safety and quality throughout the supply chain</p>
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a> > <span>Food Safety and Quality</span>
+                </div>
+            </div>
+
+            <div class="roadmap">
+                <div class="roadmap-stop" onclick="navigateToQualitySystem('HACCP', 'food-safety')" style="border-left-color: #10b981;">
+                    <h3>HACCP (Hazard Analysis Critical Control Points)</h3>
+                    <p>A systematic preventive approach to food safety from biological, chemical, and physical hazards in production processes.</p>
+                    <div class="roadmap-icon">🔍</div>
+                </div>
+
+                <div class="roadmap-stop" onclick="navigateToQualitySystem('BRC', 'food-safety')" style="border-left-color: #059669;">
+                    <h3>BRC (British Retail Consortium)</h3>
+                    <p>Global food safety standard that helps manufacturers fulfill legal obligations and provides protection for the end consumer.</p>
+                    <div class="roadmap-icon">🏪</div>
+                </div>
+
+                <div class="roadmap-stop" onclick="navigateToQualitySystem('IFS', 'food-safety')" style="border-left-color: #047857;">
+                    <h3>IFS (International Featured Standards)</h3>
+                    <p>Food safety and quality standard developed by European food retailers for their private label suppliers.</p>
+                    <div class="roadmap-icon">🌍</div>
+                </div>
+
+                <div class="roadmap-stop" onclick="navigateToQualitySystem('SQF', 'food-safety')" style="border-left-color: #065f46;">
+                    <h3>SQF (Safe Quality Food)</h3>
+                    <p>Rigorous food safety and quality management system designed to meet industry, customer and regulatory requirements.</p>
+                    <div class="roadmap-icon">✅</div>
+                </div>
+
+                <div class="roadmap-stop" onclick="navigateToQualitySystem('ISO 22000', 'food-safety')" style="border-left-color: #064e3b;">
+                    <h3>ISO 22000 (Food Safety Management Systems)</h3>
+                    <p>International standard that defines requirements for a food safety management system covering all organizations in the food chain.</p>
+                    <div class="roadmap-icon">📋</div>
+                </div>
+
+                <div class="roadmap-stop" onclick="navigateToQualitySystem('FSSC 22000', 'food-safety')" style="border-left-color: #14532d;">
+                    <h3>FSSC 22000 (Food Safety System Certification)</h3>
+                    <p>Complete food safety management system based on ISO 22000 with additional requirements for food manufacturers.</p>
+                    <div class="roadmap-icon">🛡️</div>
+                </div>
+
+                <div class="roadmap-stop" onclick="navigateToQualitySystem('Organic Standards', 'food-safety')" style="border-left-color: #166534;">
+                    <h3>Organic Standards</h3>
+                    <p>Standards that govern the production, processing, and labeling of organic food products worldwide.</p>
+                    <div class="roadmap-icon">🌱</div>
+                </div>
+            </div>
+
+            <div class="roadmap-footer">
+                <button onclick="goBack()" class="btn-secondary">← Back</button>
+                <button onclick="goHome()" class="btn-primary">Home</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Quality World with Thomas. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

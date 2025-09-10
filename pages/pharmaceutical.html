@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmaceutical Quality Systems - Quality World with Thomas</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1><a href="../index.html" style="color: white; text-decoration: none;">Quality World with Thomas</a></h1>
+            </div>
+            <div class="nav-links">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content" id="main-content">
+        <div class="roadmap-container">
+            <div class="roadmap-header">
+                <h1>Pharmaceutical Quality Systems</h1>
+                <p>Navigate through the critical quality systems that ensure pharmaceutical safety, efficacy, and compliance</p>
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a> > <span>Pharmaceutical Quality</span>
+                </div>
+            </div>
+
+            <div class="roadmap">
+                <div class="roadmap-stop" onclick="navigateToQualitySystem('GMP', 'pharmaceutical')" style="border-left-color: #3b82f6;">
+                    <h3>GMP (Good Manufacturing Practice)</h3>
+                    <p>Quality assurance system ensuring pharmaceutical products are consistently produced and controlled according to quality standards.</p>
+                    <div class="roadmap-icon">🏭</div>
+                </div>
+
+                <div class="roadmap-stop" onclick="navigateToQualitySystem('GDP', 'pharmaceutical')" style="border-left-color: #2563eb;">
+                    <h3>GDP (Good Distribution Practice)</h3>
+                    <p>Guidelines ensuring the quality and integrity of pharmaceutical products throughout the distribution network.</p>
+                    <div class="roadmap-icon">🚚</div>
+                </div>
+
+                <div class="roadmap-stop" onclick="navigateToQualitySystem('GCP', 'pharmaceutical')" style="border-left-color: #1d4ed8;">
+                    <h3>GCP (Good Clinical Practice)</h3>
+                    <p>International ethical and scientific quality standard for designing, conducting, and reporting clinical trials.</p>
+                    <div class="roadmap-icon">🧪</div>
+                </div>
+
+                <div class="roadmap-stop" onclick="navigateToQualitySystem('ICH Guidelines', 'pharmaceutical')" style="border-left-color: #1e40af;">
+                    <h3>ICH Guidelines</h3>
+                    <p>International harmonization guidelines for technical requirements of pharmaceuticals for human use.</p>
+                    <div class="roadmap-icon">🌐</div>
+                </div>
+
+                <div class="roadmap-stop" onclick="navigateToQualitySystem('FDA Regulations', 'pharmaceutical')" style="border-left-color: #1e3a8a;">
+                    <h3>FDA Regulations</h3>
+                    <p>US Food and Drug Administration regulations governing pharmaceutical development, manufacturing, and marketing.</p>
+                    <div class="roadmap-icon">🇺🇸</div>
+                </div>
+
+                <div class="roadmap-stop" onclick="navigateToQualitySystem('EMA Guidelines', 'pharmaceutical')" style="border-left-color: #1e3a8a;">
+                    <h3>EMA Guidelines</h3>
+                    <p>European Medicines Agency guidelines for pharmaceutical authorization and supervision in the European Union.</p>
+                    <div class="roadmap-icon">🇪🇺</div>
+                </div>
+
+                <div class="roadmap-stop" onclick="navigateToQualitySystem('USP Standards', 'pharmaceutical')" style="border-left-color: #312e81;">
+                    <h3>USP Standards</h3>
+                    <p>United States Pharmacopeia standards providing quality criteria for medicines, food ingredients, and dietary supplements.</p>
+                    <div class="roadmap-icon">📖</div>
+                </div>
+            </div>
+
+            <div class="roadmap-footer">
+                <button onclick="goBack()" class="btn-secondary">← Back</button>
+                <button onclick="goHome()" class="btn-primary">Home</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Quality World with Thomas. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

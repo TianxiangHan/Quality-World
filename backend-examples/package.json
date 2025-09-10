@@ -1,0 +1,34 @@
+{
+  "name": "quality-world-contact-api",
+  "version": "1.0.0",
+  "description": "Contact form API for Quality World with Thomas website",
+  "main": "contact-handler.js",
+  "scripts": {
+    "start": "node contact-handler.js",
+    "dev": "nodemon contact-handler.js",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "contact-form",
+    "email",
+    "api",
+    "quality-management"
+  ],
+  "author": "Thomas - Quality World",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.1",
+    "cors": "^2.8.5",
+    "helmet": "^6.0.1",
+    "express-rate-limit": "^6.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}
+

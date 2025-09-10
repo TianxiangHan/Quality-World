@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Thomas - Quality World with Thomas</title>
+    <link rel="stylesheet" href="../css/styles.css?v=3">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Force About page styles to display */
+        .about-container {
+            max-width: 1200px !important;
+            margin: 0 auto !important;
+            padding: 2rem !important;
+        }
+        
+        .about-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+            color: white !important;
+            border-radius: 15px !important;
+            padding: 3rem !important;
+            margin-bottom: 3rem !important;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1) !important;
+        }
+        
+        .profile-section {
+            display: flex !important;
+            align-items: center !important;
+            gap: 2rem !important;
+            max-width: 800px !important;
+            margin: 0 auto !important;
+        }
+        
+        .profile-placeholder {
+            width: 120px !important;
+            height: 120px !important;
+            border-radius: 50% !important;
+            background: rgba(255,255,255,0.2) !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            border: 4px solid rgba(255,255,255,0.3) !important;
+        }
+        
+        .profile-initial {
+            font-size: 3rem !important;
+            font-weight: 700 !important;
+            color: white !important;
+        }
+        
+        .profile-info h1 {
+            font-size: 2.5rem !important;
+            font-weight: 700 !important;
+            margin-bottom: 0.5rem !important;
+            color: white !important;
+        }
+        
+        .title {
+            font-size: 1.2rem !important;
+            font-weight: 300 !important;
+            opacity: 0.9 !important;
+            margin-bottom: 1rem !important;
+            color: white !important;
+        }
+        
+        .content-grid {
+            display: grid !important;
+            grid-template-columns: 2fr 1fr !important;
+            gap: 3rem !important;
+            margin-bottom: 3rem !important;
+        }
+        
+        .intro-section, .background-section {
+            background: white !important;
+            padding: 2rem !important;
+            border-radius: 15px !important;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1) !important;
+        }
+        
+        .intro-section h2, .background-section h2 {
+            color: #1a202c !important;
+            font-size: 1.8rem !important;
+            font-weight: 600 !important;
+            margin-bottom: 1.5rem !important;
+            border-bottom: 3px solid #667eea !important;
+            padding-bottom: 0.5rem !important;
+        }
+        
+        .expertise-section {
+            background: #f8fafc !important;
+            padding: 3rem !important;
+            border-radius: 15px !important;
+        }
+        
+        .expertise-grid {
+            display: grid !important;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+            gap: 2rem !important;
+        }
+        
+        .expertise-card {
+            background: white !important;
+            padding: 2rem !important;
+            border-radius: 15px !important;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1) !important;
+            text-align: center !important;
+            border-top: 4px solid !important;
+        }
+        
+        .expertise-card.food-safety {
+            border-top-color: #10b981 !important;
+        }
+        
+        .expertise-card.pharmaceutical {
+            border-top-color: #3b82f6 !important;
+        }
+        
+        .expertise-card.cosmetic {
+            border-top-color: #ec4899 !important;
+        }
+        
+        /* Responsive for About page */
+        @media (max-width: 1024px) {
+            .content-grid {
+                grid-template-columns: 1fr !important;
+                gap: 2rem !important;
+            }
+            
+            .profile-section {
+                flex-direction: column !important;
+                text-align: center !important;
+                gap: 1rem !important;
+            }
+            
+            .expertise-grid {
+                grid-template-columns: 1fr !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1><a href="../index.html" style="color: white; text-decoration: none;">Quality World with Thomas</a></h1>
+            </div>
+            <div class="nav-links">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content" id="main-content">
+        <div class="about-container">
+            <!-- Hero Section -->
+            <section class="about-hero">
+                <div class="hero-content">
+                    <div class="profile-section">
+                        <div class="profile-image">
+                            <div class="profile-placeholder">
+                                <span class="profile-initial">T</span>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h1>Meet Thomas</h1>
+                            <p class="title">Quality Management Professional & Industry Consultant</p>
+                            <div class="breadcrumb">
+                                <a href="../index.html">Home</a> > <span>About Thomas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Content -->
+            <section class="about-content">
+                <div class="content-grid">
+                    <!-- Personal Introduction -->
+                    <div class="intro-section">
+                        <h2>Welcome to My Quality World</h2>
+                        <p class="intro-text">
+                            With over two decades of experience in quality management across food safety, pharmaceutical, and cosmetic industries, I've dedicated my career to ensuring products meet the highest standards of safety, efficacy, and compliance. My passion for quality isn't just professional—it's personal.
+                        </p>
+                        <p>
+                            I believe that quality systems are more than just regulatory requirements; they're the foundation of trust between businesses and consumers. Through this platform, I share my knowledge, insights, and real-world experiences to help organizations navigate the complex landscape of quality management.
+                        </p>
+                    </div>
+
+                    <!-- Professional Background -->
+                    <div class="background-section">
+                        <h2>Professional Journey</h2>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h3>Quality Consultant & Educator</h3>
+                                    <span class="timeline-date">2020 - Present</span>
+                                    <p>Independent consulting and training across multiple industries, helping organizations implement and maintain robust quality management systems.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h3>Senior Quality Manager</h3>
+                                    <span class="timeline-date">2015 - 2020</span>
+                                    <p>Led quality assurance teams in pharmaceutical manufacturing, overseeing GMP compliance and regulatory submissions.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h3>Food Safety Specialist</h3>
+                                    <span class="timeline-date">2010 - 2015</span>
+                                    <p>Implemented HACCP systems and achieved multiple certifications including BRC and IFS for food manufacturing facilities.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h3>Quality Analyst</h3>
+                                    <span class="timeline-date">2005 - 2010</span>
+                                    <p>Started my quality journey in cosmetics manufacturing, developing expertise in ISO 22716 and regulatory compliance.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Expertise Areas -->
+                <div class="expertise-section">
+                    <h2>Areas of Expertise</h2>
+                    <div class="expertise-grid">
+                        <div class="expertise-card food-safety">
+                            <div class="card-icon">🍎</div>
+                            <h3>Food Safety & Quality</h3>
+                            <ul>
+                                <li>HACCP Implementation & Maintenance</li>
+                                <li>BRC, IFS, SQF Certifications</li>
+                                <li>ISO 22000 & FSSC 22000</li>
+                                <li>Supplier Auditing & Qualification</li>
+                                <li>Organic Standards Compliance</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="expertise-card pharmaceutical">
+                            <div class="card-icon">💊</div>
+                            <h3>Pharmaceutical GMP</h3>
+                            <ul>
+                                <li>Good Manufacturing Practice (GMP)</li>
+                                <li>Good Distribution Practice (GDP)</li>
+                                <li>Validation & Qualification</li>
+                                <li>Regulatory Submissions & Inspections</li>
+                                <li>Quality Risk Management (ICH Q9)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="expertise-card cosmetic">
+                            <div class="card-icon">💄</div>
+                            <h3>Cosmetic Quality</h3>
+                            <ul>
+                                <li>ISO 22716 Cosmetics GMP</li>
+                                <li>EU & FDA Regulatory Compliance</li>
+                                <li>Product Safety Assessment</li>
+                                <li>CPNP Notifications</li>
+                                <li>Claims Substantiation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications & Qualifications -->
+                <div class="credentials-section">
+                    <h2>Certifications & Qualifications</h2>
+                    <div class="credentials-grid">
+                        <div class="credential-item">
+                            <h4>Professional Certifications</h4>
+                            <ul>
+                                <li>Certified Quality Manager (CQM)</li>
+                                <li>Lead Auditor - ISO 9001</li>
+                                <li>HACCP Certified Professional</li>
+                                <li>GMP Certified Inspector</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="credential-item">
+                            <h4>Education</h4>
+                            <ul>
+                                <li>Master's in Quality Management</li>
+                                <li>Bachelor's in Food Science</li>
+                                <li>Diploma in Regulatory Affairs</li>
+                                <li>Certificate in Risk Management</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="credential-item">
+                            <h4>Professional Memberships</h4>
+                            <ul>
+                                <li>American Society for Quality (ASQ)</li>
+                                <li>International Association for Food Protection</li>
+                                <li>Society of Cosmetic Chemists</li>
+                                <li>Regulatory Affairs Professionals Society</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Personal Philosophy -->
+                <div class="philosophy-section">
+                    <h2>My Philosophy</h2>
+                    <div class="philosophy-content">
+                        <blockquote>
+                            "Quality is not just about meeting standards—it's about exceeding expectations and building trust that lasts a lifetime."
+                        </blockquote>
+                        <p>
+                            Throughout my career, I've learned that successful quality management isn't just about implementing systems and following procedures. It's about creating a culture where quality becomes everyone's responsibility and continuous improvement is a way of life.
+                        </p>
+                        <p>
+                            I'm passionate about making complex quality concepts accessible and practical. Whether you're a small startup looking to establish your first quality system or a multinational corporation seeking to optimize existing processes, I believe in tailored solutions that fit your unique needs and goals.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Services Offered -->
+                <div class="services-section">
+                    <h2>How I Can Help You</h2>
+                    <div class="services-grid">
+                        <div class="service-item">
+                            <div class="service-icon">🎯</div>
+                            <h3>Quality System Implementation</h3>
+                            <p>From initial assessment to full certification, I guide organizations through the complete implementation process of quality management systems.</p>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-icon">📚</div>
+                            <h3>Training & Education</h3>
+                            <p>Customized training programs for teams at all levels, from basic quality awareness to advanced auditor training.</p>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-icon">🔍</div>
+                            <h3>Auditing & Assessment</h3>
+                            <p>Independent audits and gap analyses to identify improvement opportunities and ensure regulatory compliance.</p>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-icon">⚡</div>
+                            <h3>Crisis Management</h3>
+                            <p>Rapid response support for quality issues, recalls, and regulatory inspections to minimize impact and restore confidence.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Personal Interests -->
+                <div class="interests-section">
+                    <h2>Beyond Quality Management</h2>
+                    <p>
+                        When I'm not immersed in quality systems, you'll find me exploring the latest developments in food science, reading about emerging technologies in manufacturing, or volunteering with local food safety organizations. I'm also an avid photographer and enjoy capturing the precision and beauty found in well-designed manufacturing processes.
+                    </p>
+                    <p>
+                        I believe in lifelong learning and regularly attend industry conferences, participate in professional forums, and contribute to quality management publications. Staying current with industry trends and emerging regulations isn't just part of my job—it's essential for providing the best possible guidance to my clients.
+                    </p>
+                </div>
+
+                <!-- Call to Action -->
+                <div class="cta-section">
+                    <h2>Let's Connect</h2>
+                    <p>
+                        Whether you have questions about quality systems, need guidance on regulatory compliance, or want to discuss a potential project, I'd love to hear from you. Every quality journey is unique, and I'm here to help you navigate yours with confidence.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn-primary">Get in Touch</a>
+                        <a href="blog.html" class="btn-secondary">Read My Insights</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Quality World with Thomas. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

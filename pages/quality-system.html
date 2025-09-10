@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quality System Details - Quality World with Thomas</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1><a href="../index.html" style="color: white; text-decoration: none;">Quality World with Thomas</a></h1>
+            </div>
+            <div class="nav-links">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content" id="main-content">
+        <div class="quality-system-container">
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a> > 
+                <a href="#" id="categoryLink">Category</a> > 
+                <span id="systemName">Quality System</span>
+            </div>
+
+            <div class="system-header">
+                <div class="header-content">
+                    <div class="header-text">
+                        <h1 id="systemTitle">Quality System</h1>
+                        <p id="systemOverview" class="system-overview">Loading system information...</p>
+                    </div>
+                    <div class="header-image">
+                        <img id="systemImage" src="" alt="Quality System Image" style="display: none;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="system-content">
+                <div class="content-grid">
+                    <section class="system-section">
+                        <h2>Purpose and Scope</h2>
+                        <div id="purposeContent" class="section-content">
+                            <p>Loading content...</p>
+                        </div>
+                    </section>
+
+                    <section class="system-section">
+                        <h2>Key Requirements</h2>
+                        <div id="requirementsContent" class="section-content">
+                            <p>Loading content...</p>
+                        </div>
+                    </section>
+
+                    <section class="system-section">
+                        <h2>Implementation Guidelines</h2>
+                        <div id="implementationContent" class="section-content">
+                            <p>Loading content...</p>
+                        </div>
+                    </section>
+
+                    <section class="system-section">
+                        <h2>Benefits and Importance</h2>
+                        <div id="benefitsContent" class="section-content">
+                            <p>Loading content...</p>
+                        </div>
+                    </section>
+
+                    <section class="system-section">
+                        <h2>Resources and References</h2>
+                        <div id="resourcesContent" class="section-content">
+                            <p>Loading content...</p>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="navigation-buttons">
+                    <button onclick="goBack()" class="btn-secondary">← Back to Roadmap</button>
+                    <button onclick="goHome()" class="btn-primary">Home</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Quality World with Thomas. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/quality-systems-data.js?v=3"></script>
+    <script>
+        // Load quality system content based on URL parameters
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const systemName = urlParams.get('system');
+            const category = urlParams.get('category');
+            
+            console.log('URL parameters:', { systemName, category });
+            console.log('window.qualitySystemsData available:', !!window.qualitySystemsData);
+            
+            if (systemName && category && window.qualitySystemsData) {
+                loadSystemContent(systemName, category);
+            } else {
+                console.error('Missing parameters or data:', { 
+                    systemName, 
+                    category, 
+                    hasData: !!window.qualitySystemsData 
+                });
+                showError('Quality system information not found');
+            }
+        });
+
+        function loadSystemContent(systemName, category) {
+            console.log('Looking for system:', systemName);
+            console.log('Available systems:', Object.keys(window.qualitySystemsData || {}));
+            const systemData = window.qualitySystemsData[systemName];
+            
+            if (!systemData) {
+                console.error('System data not found for:', systemName);
+                showError('System data not available');
+                return;
+            }
+
+            // Update page title and header
+            document.title = `${systemName} - Quality World with Thomas`;
+            document.getElementById('systemTitle').textContent = systemName;
+            document.getElementById('systemName').textContent = systemName;
+            document.getElementById('systemOverview').textContent = systemData.overview;
+            
+            // Update system image
+            const systemImage = document.getElementById('systemImage');
+            if (systemData.image) {
+                systemImage.src = systemData.image;
+                systemImage.style.display = 'block';
+                systemImage.alt = `${systemName} Quality System`;
+            } else {
+                systemImage.style.display = 'none';
+            }
+            
+            // Update category link
+            const categoryLink = document.getElementById('categoryLink');
+            categoryLink.textContent = getCategoryDisplayName(category);
+            categoryLink.href = `${category}.html`;
+            
+            // Load content sections
+            document.getElementById('purposeContent').innerHTML = systemData.purpose;
+            document.getElementById('requirementsContent').innerHTML = systemData.requirements;
+            document.getElementById('implementationContent').innerHTML = systemData.implementation;
+            document.getElementById('benefitsContent').innerHTML = systemData.benefits;
+            document.getElementById('resourcesContent').innerHTML = systemData.resources;
+        }
+
+        function getCategoryDisplayName(category) {
+            const categoryNames = {
+                'food-safety': 'Food Safety and Quality',
+                'pharmaceutical': 'Pharmaceutical Quality',
+                'cosmetic': 'Cosmetic Quality'
+            };
+            return categoryNames[category] || category;
+        }
+
+        function showError(message) {
+            const container = document.querySelector('.quality-system-container');
+            container.innerHTML = `
+                <div class="error-container">
+                    <h1>Error</h1>
+                    <p>${message}</p>
+                    <button onclick="goBack()" class="btn-primary">Go Back</button>
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>

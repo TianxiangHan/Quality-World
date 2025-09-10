@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmetic Quality Systems - Quality World with Thomas</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1><a href="../index.html" style="color: white; text-decoration: none;">Quality World with Thomas</a></h1>
+            </div>
+            <div class="nav-links">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content" id="main-content">
+        <div class="roadmap-container">
+            <div class="roadmap-header">
+                <h1>Cosmetic Quality Systems</h1>
+                <p>Discover the quality standards and regulations that govern cosmetic product safety and compliance</p>
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a> > <span>Cosmetic Quality</span>
+                </div>
+            </div>
+
+            <div class="roadmap">
+                <div class="roadmap-stop" onclick="navigateToQualitySystem('ISO 22716', 'cosmetic')" style="border-left-color: #ec4899;">
+                    <h3>ISO 22716 (Cosmetics GMP)</h3>
+                    <p>International standard for Good Manufacturing Practices (GMP) specifically designed for cosmetic products.</p>
+                    <div class="roadmap-icon">💄</div>
+                </div>
+
+                <div class="roadmap-stop" onclick="navigateToQualitySystem('FDA Cosmetic Regulations', 'cosmetic')" style="border-left-color: #db2777;">
+                    <h3>FDA Cosmetic Regulations</h3>
+                    <p>US Food and Drug Administration regulations governing cosmetic product safety, labeling, and marketing.</p>
+                    <div class="roadmap-icon">🇺🇸</div>
+                </div>
+
+                <div class="roadmap-stop" onclick="navigateToQualitySystem('EU Cosmetic Regulations', 'cosmetic')" style="border-left-color: #be185d;">
+                    <h3>EU Cosmetic Regulations</h3>
+                    <p>European Union regulations ensuring cosmetic product safety and compliance within the European market.</p>
+                    <div class="roadmap-icon">🇪🇺</div>
+                </div>
+
+                <div class="roadmap-stop" onclick="navigateToQualitySystem('CPNP', 'cosmetic')" style="border-left-color: #9d174d;">
+                    <h3>CPNP (Cosmetic Product Notification Portal)</h3>
+                    <p>European Commission notification system for cosmetic products placed on the EU market.</p>
+                    <div class="roadmap-icon">📋</div>
+                </div>
+
+                <div class="roadmap-stop" onclick="navigateToQualitySystem('Safety Assessment', 'cosmetic')" style="border-left-color: #831843;">
+                    <h3>Safety Assessment</h3>
+                    <p>Comprehensive evaluation process to ensure cosmetic product safety for human health under normal use conditions.</p>
+                    <div class="roadmap-icon">🛡️</div>
+                </div>
+
+                <div class="roadmap-stop" onclick="navigateToQualitySystem('INCI Standards', 'cosmetic')" style="border-left-color: #701a75;">
+                    <h3>INCI Standards</h3>
+                    <p>International Nomenclature of Cosmetic Ingredients system for standardized ingredient naming.</p>
+                    <div class="roadmap-icon">🏷️</div>
+                </div>
+
+                <div class="roadmap-stop" onclick="navigateToQualitySystem('Cruelty-Free Standards', 'cosmetic')" style="border-left-color: #581c87;">
+                    <h3>Cruelty-Free Standards</h3>
+                    <p>Standards and certifications ensuring cosmetic products are developed without animal testing.</p>
+                    <div class="roadmap-icon">🐰</div>
+                </div>
+            </div>
+
+            <div class="roadmap-footer">
+                <button onclick="goBack()" class="btn-secondary">← Back</button>
+                <button onclick="goHome()" class="btn-primary">Home</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Quality World with Thomas. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

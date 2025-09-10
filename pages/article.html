@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Article - Quality World with Thomas</title>
+    <link rel="stylesheet" href="../css/styles.css?v=3">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1><a href="../index.html" style="color: white; text-decoration: none;">Quality World with Thomas</a></h1>
+            </div>
+            <div class="nav-links">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content" id="main-content">
+        <div class="article-container">
+            <!-- Article Header -->
+            <header class="article-header">
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a> > 
+                    <a href="blog.html">Blog</a> > 
+                    <span id="article-breadcrumb-title">Article</span>
+                </div>
+                
+                <div class="article-meta-top">
+                    <span id="article-date" class="date">Loading...</span>
+                    <span id="reading-time" class="reading-time">Loading...</span>
+                </div>
+                
+                <h1 id="article-title">Loading Article...</h1>
+                
+                <div id="article-tags" class="article-tags">
+                    <!-- Tags will be populated by JavaScript -->
+                </div>
+                
+                <div class="article-author">
+                    <div class="author-info">
+                        <div class="author-avatar">
+                            <span>T</span>
+                        </div>
+                        <div class="author-details">
+                            <span class="author-name">Thomas</span>
+                            <span class="author-title">Quality Management Professional</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Article Content -->
+            <article class="article-content" id="article-body">
+                <div class="loading-message">
+                    <p>Loading article content...</p>
+                </div>
+            </article>
+
+            <!-- Article Footer -->
+            <footer class="article-footer">
+                <div class="article-actions">
+                    <button onclick="history.back()" class="btn-secondary">← Back to Blog</button>
+                    <a href="blog.html" class="btn-primary">All Articles</a>
+                </div>
+                
+                <div class="share-section">
+                    <h3>Share this article</h3>
+                    <div class="share-buttons">
+                        <button onclick="shareArticle('twitter')" class="share-btn twitter">
+                            📱 Twitter
+                        </button>
+                        <button onclick="shareArticle('linkedin')" class="share-btn linkedin">
+                            💼 LinkedIn
+                        </button>
+                        <button onclick="shareArticle('email')" class="share-btn email">
+                            ✉️ Email
+                        </button>
+                        <button onclick="copyArticleLink()" class="share-btn copy">
+                            🔗 Copy Link
+                        </button>
+                    </div>
+                </div>
+            </footer>
+
+            <!-- Related Articles -->
+            <section class="related-articles">
+                <h2>Related Articles</h2>
+                <div id="related-articles-grid" class="related-grid">
+                    <!-- Related articles will be populated by JavaScript -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Quality World with Thomas. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/blog-articles.js"></script>
+    <script src="../js/article.js"></script>
+</body>
+</html>

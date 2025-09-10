@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Quality World with Thomas</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            margin: 0;
+            padding: 40px;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 { font-size: 2.5rem; margin-bottom: 2rem; }
+        .options { max-width: 600px; margin: 0 auto; }
+        .option { 
+            background: rgba(255,255,255,0.1); 
+            padding: 20px; 
+            margin: 15px 0; 
+            border-radius: 10px; 
+            border: 2px solid rgba(255,255,255,0.2);
+        }
+        .option h3 { margin: 0 0 10px 0; color: #fff; }
+        .option p { margin: 0 0 15px 0; opacity: 0.9; }
+        .btn {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 10px 20px;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+        .direct-link {
+            margin-top: 2rem;
+            padding: 20px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quality World with Thomas</h1>
+    <div class="options">
+        <div class="option">
+            <h3>Option 1: Node.js Server (Recommended)</h3>
+            <p>Double-click <strong>start-server-node.bat</strong> to start the server, then go to:</p>
+            <a href="http://localhost:8000" class="btn" target="_blank">http://localhost:8000</a>
+        </div>
+        
+        <div class="option">
+            <h3>Option 2: Direct File Access</h3>
+            <p>Open the website directly in your browser (some features may be limited):</p>
+            <a href="index.html" class="btn">Open Website Directly</a>
+        </div>
+        
+        <div class="option">
+            <h3>Option 3: Alternative Server</h3>
+            <p>Install Python and use: <code>python -m http.server 8000</code></p>
+        </div>
+    </div>
+    
+    <div class="direct-link">
+        <h3>🚀 Quick Access</h3>
+        <p>If the server is already running, click here:</p>
+        <a href="http://localhost:8000" class="btn" target="_blank" onclick="checkServer()">Open Quality World Website</a>
+    </div>
+
+    <script>
+        function checkServer() {
+            setTimeout(() => {
+                // If the link doesn't work, show alternative
+                alert('If the link doesn\'t work:\n\n1. Run "start-server-node.bat"\n2. Wait for "Server running at http://localhost:8000"\n3. Then click the link again');
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
+

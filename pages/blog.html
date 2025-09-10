@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quality Experience with Thomas - Blog</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1><a href="../index.html" style="color: white; text-decoration: none;">Quality World with Thomas</a></h1>
+            </div>
+            <div class="nav-links">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content" id="main-content">
+        <div class="blog-container">
+            <div class="blog-header">
+                <h1>Quality Experience with Thomas</h1>
+                <p>Insights, experiences, and perspectives on quality management across industries</p>
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a> > <span>Blog</span>
+                </div>
+                
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Search articles, tags, or topics...">
+                </div>
+
+                <div class="filter-buttons">
+                    <button onclick="filterArticles('all')" class="filter-btn active">All</button>
+                    <button onclick="filterArticles('food-safety')" class="filter-btn">Food Safety</button>
+                    <button onclick="filterArticles('pharmaceutical')" class="filter-btn">Pharmaceutical</button>
+                    <button onclick="filterArticles('cosmetic')" class="filter-btn">Cosmetic</button>
+                    <button onclick="filterArticles('quality-management')" class="filter-btn">Quality Management</button>
+                </div>
+            </div>
+
+            <div class="articles-grid" id="articles-grid">
+                <article class="article-card" data-category="food-safety" onclick="openArticle('haccp-evolution')">
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-date">December 15, 2024</span>
+                            <span class="reading-time">5 min read</span>
+                        </div>
+                        <h3>The Evolution of HACCP: From Concept to Global Standard</h3>
+                        <p class="article-snippet">Explore how the Hazard Analysis Critical Control Points system transformed from a NASA food safety program into the cornerstone of modern food safety management worldwide.</p>
+                        <div class="article-tags">
+                            <span class="tag">food-safety</span>
+                            <span class="tag">HACCP</span>
+                            <span class="tag">history</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card" data-category="pharmaceutical" onclick="openArticle('gmp-implementation')">
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-date">December 10, 2024</span>
+                            <span class="reading-time">7 min read</span>
+                        </div>
+                        <h3>GMP Implementation: Lessons Learned from 20 Years in Pharmaceuticals</h3>
+                        <p class="article-snippet">Real-world insights into implementing Good Manufacturing Practices in pharmaceutical facilities, including common pitfalls and success strategies from two decades of experience.</p>
+                        <div class="article-tags">
+                            <span class="tag">pharmaceutical</span>
+                            <span class="tag">GMP</span>
+                            <span class="tag">implementation</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card" data-category="cosmetic" onclick="openArticle('iso-22716-cosmetics')">
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-date">December 5, 2024</span>
+                            <span class="reading-time">4 min read</span>
+                        </div>
+                        <h3>ISO 22716: Why Cosmetic GMP Matters More Than Ever</h3>
+                        <p class="article-snippet">As consumer awareness grows, understanding ISO 22716 Good Manufacturing Practices for cosmetics becomes crucial for brand reputation and regulatory compliance.</p>
+                        <div class="article-tags">
+                            <span class="tag">cosmetic</span>
+                            <span class="tag">ISO-22716</span>
+                            <span class="tag">GMP</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card" data-category="quality-management" onclick="openArticle('quality-culture-building')">
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-date">November 30, 2024</span>
+                            <span class="reading-time">6 min read</span>
+                        </div>
+                        <h3>Building a Quality Culture: Beyond Procedures and Checklists</h3>
+                        <p class="article-snippet">Discover how to transform your organization from compliance-focused to quality-driven through culture change, leadership engagement, and employee empowerment.</p>
+                        <div class="article-tags">
+                            <span class="tag">quality-management</span>
+                            <span class="tag">culture</span>
+                            <span class="tag">leadership</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card" data-category="quality-management" onclick="openArticle('risk-based-quality')">
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-date">November 25, 2024</span>
+                            <span class="reading-time">8 min read</span>
+                        </div>
+                        <h3>Risk-Based Quality Management: The Future is Here</h3>
+                        <p class="article-snippet">Learn how risk-based approaches are revolutionizing quality management, from ICH Q9 in pharmaceuticals to emerging applications across all industries.</p>
+                        <div class="article-tags">
+                            <span class="tag">quality-management</span>
+                            <span class="tag">risk-management</span>
+                            <span class="tag">innovation</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card" data-category="quality-management" onclick="openArticle('supply-chain-quality')">
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-date">November 20, 2024</span>
+                            <span class="reading-time">9 min read</span>
+                        </div>
+                        <h3>Supply Chain Quality: Managing Risk in a Global Economy</h3>
+                        <p class="article-snippet">Explore strategies for maintaining quality standards across complex global supply chains, from supplier qualification to ongoing monitoring and risk mitigation.</p>
+                        <div class="article-tags">
+                            <span class="tag">quality-management</span>
+                            <span class="tag">supply-chain</span>
+                            <span class="tag">globalization</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card" data-category="quality-management" onclick="openArticle('quality-sustainability')">
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-date">November 15, 2024</span>
+                            <span class="reading-time">6 min read</span>
+                        </div>
+                        <h3>The Future of Quality: Sustainability and Environmental Compliance</h3>
+                        <p class="article-snippet">How environmental considerations are becoming integral to quality systems, with practical steps for integrating sustainability into existing quality management frameworks.</p>
+                        <div class="article-tags">
+                            <span class="tag">quality-management</span>
+                            <span class="tag">sustainability</span>
+                            <span class="tag">environment</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card" data-category="cosmetic" onclick="openArticle('eu-cosmetic-updates')">
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-date">November 10, 2024</span>
+                            <span class="reading-time">4 min read</span>
+                        </div>
+                        <h3>EU Cosmetic Regulation Updates: What Changed in 2024</h3>
+                        <p class="article-snippet">A detailed overview of the latest updates to EU cosmetic regulations, including new safety assessment requirements and CPNP notification changes.</p>
+                        <div class="article-tags">
+                            <span class="tag">cosmetic</span>
+                            <span class="tag">EU-regulations</span>
+                            <span class="tag">CPNP</span>
+                            <span class="tag">updates</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="pagination" id="pagination">
+                <button class="pagination-btn" id="prevBtn" onclick="changePage(-1)">← Previous</button>
+                <span class="pagination-info" id="pageInfo">Page 1 of 3</span>
+                <button class="pagination-btn" id="nextBtn" onclick="changePage(1)">Next →</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Quality World with Thomas. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/blog-articles.js"></script>
+    <script>
+        // Blog article click functionality
+        function openArticle(articleId) {
+            window.location.href = `article.html?id=${articleId}`;
+        }
+        
+        // Enhanced filter function
+        function filterArticles(category) {
+            const articles = document.querySelectorAll('.article-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            // Update active button
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            // Filter articles
+            articles.forEach(article => {
+                const articleCategory = article.dataset.category;
+                if (category === 'all' || articleCategory === category) {
+                    article.style.display = 'block';
+                } else {
+                    article.style.display = 'none';
+                }
+            });
+        }
+        
+        // Pagination functionality
+        let currentPage = 1;
+        const articlesPerPage = 3;
+        let allArticles = [];
+        let filteredArticles = [];
+        
+        function initializePagination() {
+            allArticles = Array.from(document.querySelectorAll('.article-card'));
+            filteredArticles = [...allArticles];
+            showPage(1);
+        }
+        
+        function showPage(page) {
+            const startIndex = (page - 1) * articlesPerPage;
+            const endIndex = startIndex + articlesPerPage;
+            
+            // Hide all articles
+            allArticles.forEach(article => {
+                article.style.display = 'none';
+            });
+            
+            // Show articles for current page
+            for (let i = startIndex; i < endIndex && i < filteredArticles.length; i++) {
+                if (filteredArticles[i]) {
+                    filteredArticles[i].style.display = 'block';
+                }
+            }
+            
+            updatePaginationInfo();
+        }
+        
+        function updatePaginationInfo() {
+            const totalPages = Math.ceil(filteredArticles.length / articlesPerPage);
+            const pageInfo = document.getElementById('pageInfo');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            
+            pageInfo.textContent = `Page ${currentPage} of ${totalPages}`;
+            
+            // Update button states
+            prevBtn.disabled = currentPage <= 1;
+            nextBtn.disabled = currentPage >= totalPages;
+            
+            // Add/remove disabled styling
+            if (currentPage <= 1) {
+                prevBtn.classList.add('disabled');
+            } else {
+                prevBtn.classList.remove('disabled');
+            }
+            
+            if (currentPage >= totalPages) {
+                nextBtn.classList.add('disabled');
+            } else {
+                nextBtn.classList.remove('disabled');
+            }
+        }
+        
+        function changePage(direction) {
+            const totalPages = Math.ceil(filteredArticles.length / articlesPerPage);
+            const newPage = currentPage + direction;
+            
+            if (newPage >= 1 && newPage <= totalPages) {
+                currentPage = newPage;
+                showPage(currentPage);
+                
+                // Smooth scroll to top of articles
+                document.getElementById('articles-grid').scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+        
+        // Enhanced filter function with pagination
+        function filterArticlesPaginated(category) {
+            const articles = document.querySelectorAll('.article-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            // Update active button
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            // Filter articles
+            filteredArticles = [];
+            allArticles.forEach(article => {
+                const articleCategory = article.dataset.category;
+                if (category === 'all' || articleCategory === category) {
+                    filteredArticles.push(article);
+                }
+            });
+            
+            // Reset to page 1 and show filtered results
+            currentPage = 1;
+            showPage(1);
+        }
+        
+        // Override the original filter function
+        function filterArticles(category) {
+            filterArticlesPaginated(category);
+        }
+    </script>
+    <script>
+        // Initialize search functionality when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeSearch();
+            initializePagination();
+            
+            // Add click handlers for filter buttons
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
